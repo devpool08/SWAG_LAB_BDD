@@ -14,7 +14,7 @@ public class SingletonWebDriverFactory {
     }
 
     private void setDriver(String browser) {
-        switch ((browser)) {
+        switch ((browser).toLowerCase()) {
             case "chrome":
                 local.set(new ChromeDriver());
                 break;

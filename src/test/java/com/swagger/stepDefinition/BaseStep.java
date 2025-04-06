@@ -17,7 +17,7 @@ import java.util.Properties;
 
 @SuppressWarnings({"unused","ResultOfMethodCallIgnored"})
 public class BaseStep {
-    protected  WebDriver driver;
+    protected  static WebDriver driver;
     protected SingletonWebDriverFactory factory;
     protected Properties properties;
 
@@ -51,7 +51,7 @@ public class BaseStep {
             e.printStackTrace();
         }
     }
-    public  String captureScreenshot(String name) {
+    public  static String captureScreenshot(String name) {
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         TakesScreenshot screenshot = (TakesScreenshot) driver;
         File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);

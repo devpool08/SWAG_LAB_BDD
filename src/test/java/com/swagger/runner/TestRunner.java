@@ -4,7 +4,9 @@ import com.swagger.utils.ExtentReportManager;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
+
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 @CucumberOptions(
         features = "src/test/resources/features",
@@ -13,10 +15,17 @@ import org.testng.annotations.Listeners;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         }
 )
+@Listeners(ExtentReportManager.class)
 public class TestRunner extends AbstractTestNGCucumberTests {
-        @Override
-        @DataProvider(parallel = true) // 👈 Important: Enables parallel execution
-        public Object[][] scenarios() {
-                return super.scenarios();
-        }
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
+
+    @Test(threadPoolSize = 4, invocationCount = 1, timeOut = 60000)
+    public void runTests() {
+        scenarios();
+    }
+
 }

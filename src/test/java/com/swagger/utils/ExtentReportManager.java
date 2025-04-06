@@ -49,21 +49,7 @@ public class ExtentReportManager implements ITestListener {
         test.assignCategory(result.getMethod().getGroups());
         test.log(Status.FAIL, "Test  " + result.getName() + " failed due to: " + result.getThrowable());
         try {
-            String imgPath = "";
-            Object failInstance=result.getInstance();
-            if(failInstance instanceof CheckoutStep){
-                CheckoutStep checkoutStep=(CheckoutStep)failInstance;
-                imgPath=checkoutStep.captureScreenshot(result.getTestName());
-            } else if (failInstance instanceof InvalidLoginSteps) {
-                InvalidLoginSteps invalidLoginSteps=(InvalidLoginSteps)failInstance;
-                imgPath=invalidLoginSteps.captureScreenshot(result.getTestName());
-            } else if (failInstance instanceof OrderConfirmationStep) {
-                OrderConfirmationStep orderConfirmationStep=(OrderConfirmationStep)failInstance;
-                imgPath=orderConfirmationStep.captureScreenshot(result.getTestName());
-            } else{
-                ValidLoginStep validLoginStep=(ValidLoginStep)failInstance;
-                imgPath=validLoginStep.captureScreenshot(result.getTestName());
-            }
+            String imgPath = BaseStep.captureScreenshot(result.getName());
             System.out.println("---------------" + result.getInstance().toString());
             test.addScreenCaptureFromPath(imgPath);
         } catch (Exception e) {
