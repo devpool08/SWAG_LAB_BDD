@@ -1,6 +1,5 @@
 package com.swagger.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,26 +29,16 @@ public class InventoryPage extends BasePage {
         return pageLabel.getText();
     }
 
-    public boolean sortByPriceLowToHigh() {
-        try {
+    public void sortByPriceLowToHigh() {
             wait.until(ExpectedConditions.visibilityOf(dropdown));
             dropdown.click();
             Select selectDropDown = new Select(dropdown);
             selectDropDown.selectByContainsVisibleText("Price (low to high)");
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 
-    public boolean addProductToCart() {
-        try {
+    public void addProductToCart() {
             wait.until(ExpectedConditions.visibilityOf(addProduct));
             addProduct.click();
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 
     public boolean verifyProductCart() {
@@ -57,13 +46,8 @@ public class InventoryPage extends BasePage {
         return cartBadge.isDisplayed();
     }
 
-    public boolean checkoutCart() {
-        try {
+    public void checkoutCart() {
             wait.until(ExpectedConditions.elementToBeClickable(checkoutCart));
             checkoutCart.click();
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 }

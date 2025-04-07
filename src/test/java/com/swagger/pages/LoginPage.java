@@ -22,42 +22,22 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//h3[@data-test='error']")
     private WebElement error;
 
-    public boolean inputUserName(String name) {
-        try {
-
+    public void inputUserName(String name) {
             wait.until(ExpectedConditions.visibilityOf(usernameInput));
             usernameInput.sendKeys(name);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 
-    public boolean inputPassword(String password) {
-        try {
+    public void inputPassword(String password) {
             wait.until(ExpectedConditions.visibilityOf(passwordInput));
             passwordInput.sendKeys(password);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 
-    public boolean clickEnter() {
-        try {
+    public void clickEnter() {
             wait.until(ExpectedConditions.visibilityOf(passwordInput));
             passwordInput.sendKeys(Keys.RETURN);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
     public String getErrorMessege() {
-        try{
             wait.until(ExpectedConditions.visibilityOf(error));
             return error.getText();
-        } catch (Exception e) {
-            return null;
-        }
     }
 }

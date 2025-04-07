@@ -15,13 +15,8 @@ public class OverviewPage extends BasePage {
     @FindBy(xpath = "//a[normalize-space()='FINISH']")
     private WebElement finishButton;
 
-    public boolean clickOnFinishButton() {
-        try {
+    public void clickOnFinishButton() {
             wait.until(ExpectedConditions.elementToBeClickable(finishButton));
             finishButton.click();
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 }

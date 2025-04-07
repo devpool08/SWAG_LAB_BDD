@@ -28,43 +28,24 @@ public class CheckoutInfoFillFormPage extends BasePage {
 
 
     public String isCheckoutInfoPresent() {
-        try {
             wait.until(ExpectedConditions.visibilityOf(subHeader));
             return subHeader.getText();
-        } catch (Exception e) {
-            return null;
-        }
     }
 
-    public boolean inputFirstName(String name) {
-        try {
+    public void inputFirstName(String name) {
             wait.until(ExpectedConditions.visibilityOf(firstNameInput));
             firstNameInput.sendKeys(name);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 
-    public boolean inputLastName(String name) {
-        try {
+    public void inputLastName(String name) {
             wait.until(ExpectedConditions.visibilityOf(lastNameInput));
             lastNameInput.sendKeys(name);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 
-    public boolean inputPostalCode(String code) {
-        try {
+    public void inputPostalCode(String code) {
             wait.until(ExpectedConditions.visibilityOf(postalCodeInput));
             postalCodeInput.sendKeys(code);
             postalCodeInput.sendKeys(Keys.ENTER);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
     public boolean clickContinueButton() {
         try {

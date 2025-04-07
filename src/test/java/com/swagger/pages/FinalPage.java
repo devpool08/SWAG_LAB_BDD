@@ -15,11 +15,7 @@ public class FinalPage extends BasePage {
     private WebElement thankYouMessage;
 
     public String getThankYouMessage() {
-        try{
             wait.until(ExpectedConditions.visibilityOf(thankYouMessage));
             return thankYouMessage.getText();
-        } catch (Exception e) {
-            return null;
-        }
     }
 }

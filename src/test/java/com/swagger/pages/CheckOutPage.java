@@ -19,20 +19,15 @@ public class CheckOutPage extends BasePage {
     @FindBy(xpath = "//a[normalize-space()='CHECKOUT']")
     private WebElement checkoutButton;
 
-    public String isItemPresent() {
+    public String getItemName() {
         wait.until(ExpectedConditions.visibilityOf(inventoryItem));
         System.out.println(inventoryItem.getText());
         return inventoryItem.getText();
     }
 
-    public boolean clickOnCheckoutButton() {
-        try {
+    public void clickOnCheckoutButton() {
             wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
             checkoutButton.click();
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 }
 

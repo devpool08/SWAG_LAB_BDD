@@ -28,8 +28,8 @@ public class OrderConfirmationStep extends BaseStep{
         assertTrue(inventoryPage.verifyProductCart(), "Product is not in cart");
         inventoryPage.checkoutCart();
         checkOutPage = new CheckOutPage(driver);
-        assertEquals(checkOutPage.isItemPresent(), "Sauce Labs Onesie");
-        assertTrue(checkOutPage.clickOnCheckoutButton(), "Error while clicking check out button");
+        assertEquals(checkOutPage.getItemName(), "Sauce Labs Onesie");
+        checkOutPage.clickOnCheckoutButton();
         checkoutInfoFillFormPage = new CheckoutInfoFillFormPage(driver);
         assertEquals(checkoutInfoFillFormPage.isCheckoutInfoPresent(), "Checkout: Your Information");
     }
@@ -37,12 +37,12 @@ public class OrderConfirmationStep extends BaseStep{
     @When("I am filling the Checkout form and proceed")
     public void i_am_filling_the_checkout_form_and_proceed() {
         assertEquals(checkoutInfoFillFormPage.isCheckoutInfoPresent(), "Checkout: Your Information");
-        assertTrue(checkoutInfoFillFormPage.
-                inputFirstName(RandomStringUtils.randomAlphabetic(6)), "Error in Filling first name");
-        assertTrue(checkoutInfoFillFormPage.
-                inputLastName(RandomStringUtils.randomAlphabetic(6)), "Error in Filling last name");
-        assertTrue(checkoutInfoFillFormPage.
-                inputPostalCode(RandomStringUtils.randomNumeric(5)), "Error in Filling postal code");
+        checkoutInfoFillFormPage.
+                inputFirstName(RandomStringUtils.randomAlphabetic(6));
+        checkoutInfoFillFormPage.
+                inputLastName(RandomStringUtils.randomAlphabetic(6));
+        checkoutInfoFillFormPage.
+                inputPostalCode(RandomStringUtils.randomNumeric(5));
     }
 
     @Then("I should see theOverview page")

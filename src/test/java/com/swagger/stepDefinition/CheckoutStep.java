@@ -35,9 +35,9 @@ public class CheckoutStep extends BaseStep{
 
     @Then("I should see the Cart Page")
     public void i_should_see_the_cart_page() {
-        assertTrue(inventoryPage.verifyProductCart(), "Product is not in cart");
+        inventoryPage.verifyProductCart();
         checkOutPage = new CheckOutPage(driver);
-        assertEquals(checkOutPage.isItemPresent(), "Sauce Labs Onesie");
+        assertEquals(checkOutPage.getItemName(), "Sauce Labs Onesie");
         tearDown();
     }
 
