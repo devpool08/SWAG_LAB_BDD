@@ -1,4 +1,5 @@
 Feature: Swag Labs Login Tests
+
   Background: I open the browser
 
   @Valid
@@ -14,7 +15,7 @@ Feature: Swag Labs Login Tests
     Then I should see the error message
 
     Examples:
-      | username                   | password       |
-      | locked_out_user             | secret_sauceM  |
-      | problem_userNOK               | secret_sauceM  |
-      | performance_glitch_userNOK      | secret_sauceNOK |
+      | username                   | password        |
+      | locked_out_user            | secret_sauceM   |
+      | problem_userNOK            | secret_sauceM   |
+      | performance_glitch_userNOK | secret_sauceNOK |
