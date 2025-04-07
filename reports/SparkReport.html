@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 7, 2025 09:34:26 am</span></a>
+<a href="#"><span class="badge badge-primary">Apr 7, 2025 03:51:38 pm</span></a>
 </li>
 </ul>
 </div>
@@ -96,9 +96,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Swag Labs Login Tests</p>
+            <p class="name">Swag Lab Order Confirmation Test</p>
             <p class="text-sm">
-              <span>9:34:27 am</span> / <span>00:00:14:224</span>
+              <span>3:51:39 pm</span> / <span>00:00:19:515</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -106,10 +106,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Swag Labs Login Tests</h5>
-<span class='badge badge-success'>04.07.2025 9:34:27 am</span>
-<span class='badge badge-danger'>04.07.2025 9:34:41 am</span>
-<span class='badge badge-default'>00:00:14:224</span>
+<h5 class="test-status text-pass">Swag Lab Order Confirmation Test</h5>
+<span class='badge badge-success'>04.07.2025 3:51:39 pm</span>
+<span class='badge badge-danger'>04.07.2025 3:51:58 pm</span>
+<span class='badge badge-default'>00:00:19:515</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -121,64 +121,75 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Valid Credentials</div>
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>fill the Checkout form</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="com.swagger.stepDefinition.ValidLoginStep.i_open_the_url_to_test_login_functionality_with_valid_credentials()">
-                <span>Given I open the url to test login functionality with valid credentials</span>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_am_in_the_checkout_form_page()">
+                <span>Given I am in the Checkout form page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.swagger.stepDefinition.ValidLoginStep.i_enter_valid_credentials_and_click_log_in_button_int_the_login_page()">
-                <span>When I Enter Valid Credentials and click log in button int the Login Page</span>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_am_filling_the_checkout_form_and_proceed()">
+                <span>When I am filling the Checkout form and proceed</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.swagger.stepDefinition.ValidLoginStep.i_should_see_the_inventory_page()">
-                <span>Then I should see the Inventory Page</span>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_should_see_the_overview_page()">
+                <span>Then I should see theOverview page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_should_see_the_message()">
+                <span>And I should see the message</span>
       <div>
       </div>
               </div>
           </div>
         </div>
   </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Swag Labs Login Tests</p>
+            <p class="text-sm">
+              <span>3:51:39 pm</span> / <span>00:00:15:564</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Swag Labs Login Tests</h5>
+<span class='badge badge-success'>04.07.2025 3:51:39 pm</span>
+<span class='badge badge-danger'>04.07.2025 3:51:54 pm</span>
+<span class='badge badge-default'>00:00:15:564</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given I open the url of Swag Lab to test login functionality with invalid credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When I enter "locked_out_user" and "secret_sauceM" and click the login button in the Login Page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then I should see the error message</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
+                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -202,7 +213,31 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
+                  <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the url of Swag Lab to test login functionality with invalid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I enter "locked_out_user" and "secret_sauceM" and click the login button in the Login Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see the error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Invalid Credentials</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -225,61 +260,26 @@
             </div>
         </div>
   </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Check Checkout Feature</p>
-            <p class="text-sm">
-              <span>9:34:27 am</span> / <span>00:00:16:760</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Check Checkout Feature</h5>
-<span class='badge badge-success'>04.07.2025 9:34:27 am</span>
-<span class='badge badge-danger'>04.07.2025 9:34:44 am</span>
-<span class='badge badge-default'>00:00:16:760</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>verify the checkout feature by adding a product in to the cart</div>
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login Feature with Valid Credentials</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="com.swagger.stepDefinition.CheckoutStep.i_am_in_the_inventory_page()">
-                <span>Given I am in the Inventory Page</span>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.ValidLoginStep.i_open_the_url_to_test_login_functionality_with_valid_credentials()">
+                <span>Given I open the url to test login functionality with valid credentials</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.swagger.stepDefinition.CheckoutStep.i_am_sorting_the_items_by_their_price()">
-                <span>And I am sorting the items by their price</span>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.ValidLoginStep.i_enter_valid_credentials_and_click_log_in_button_int_the_login_page()">
+                <span>When I Enter Valid Credentials and click log in button int the Login Page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.swagger.stepDefinition.CheckoutStep.i_add_a_product_in_to_the_cart()">
-                <span>When I add a product in to the cart</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.swagger.stepDefinition.CheckoutStep.i_should_see_the_cart_page()">
-                <span>Then I should see the Cart Page</span>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.ValidLoginStep.i_should_see_the_inventory_page()">
+                <span>Then I should see the Inventory Page</span>
       <div>
       </div>
               </div>
@@ -289,14 +289,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="13"
+        <li class="test-item"  status="fail" test-id="15"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Swag Lab Order Confirmation Test</p>
+            <p class="name">Check Checkout Feature</p>
             <p class="text-sm">
-              <span>9:34:27 am</span> / <span>00:00:12:693</span>
+              <span>3:51:39 pm</span> / <span>00:00:11:086</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -304,11 +304,11 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Swag Lab Order Confirmation Test</h5>
-<span class='badge badge-success'>04.07.2025 9:34:27 am</span>
-<span class='badge badge-danger'>04.07.2025 9:34:40 am</span>
-<span class='badge badge-default'>00:00:12:693</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<h5 class="test-status text-fail">Check Checkout Feature</h5>
+<span class='badge badge-success'>04.07.2025 3:51:39 pm</span>
+<span class='badge badge-danger'>04.07.2025 3:51:50 pm</span>
+<span class='badge badge-default'>00:00:11:086</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -319,21 +319,26 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>fill the Checkout form</div>
+        <div class="node" id="16"><span class="badge log fail-bg mr-2">Fail</span>verify the checkout feature by adding a product in to the cart</div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step fail-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_am_in_the_checkout_form_page()">
-                <span>Given I am in the Checkout form page</span>
+              <div class="step pass-bg" title="com.swagger.stepDefinition.CheckoutStep.i_am_in_the_inventory_page()">
+                <span>Given I am in the Inventory Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.swagger.stepDefinition.CheckoutStep.i_am_sorting_the_items_by_their_price()">
+                <span>And I am sorting the items by their price</span>
       <div>
         <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0f9bf776-cbb6-4cb1-a084-7d4c40688ed9, findElement {value=//select[@class='product_sort_container'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0, moz:accessibilityChecks: false, moz:buildID: 20250327043313, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18240, moz:profile: C:\Users\DEBADA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
+Command: [a84971d0-bb6b-4505-9f19-1e4b5cbbef50, findElement {using=xpath, value=//select[@class='product_sort_container']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0, moz:accessibilityChecks: false, moz:buildID: 20250327043313, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9608, moz:profile: C:\Users\DEBADA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a84971d0-bb6b-4505-9f19-1e4b5cbbef50
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -356,24 +361,19 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	at com.swagger.pages.InventoryPage.sortByPriceLowToHigh(InventoryPage.java:36)
-	at com.swagger.stepDefinition.OrderConfirmationStep.i_am_in_the_checkout_form_page(OrderConfirmationStep.java:26)
-	at ✽.I am in the Checkout form page(file:///C:/PS/SWAG%20LAB%20BDD/src/test/resources/features/OrderConfirmation.feature:3)
+	at com.swagger.stepDefinition.CheckoutStep.i_am_sorting_the_items_by_their_price(CheckoutStep.java:28)
+	at ✽.I am sorting the items by their price(file:///C:/PS/SWAG%20LAB%20BDD/src/test/resources/features/Checkout.feature:4)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_am_filling_the_checkout_form_and_proceed()">
-                <span>When I am filling the Checkout form and proceed</span>
+              <div class="step skip-bg" title="com.swagger.stepDefinition.CheckoutStep.i_add_a_product_in_to_the_cart()">
+                <span>When I add a product in to the cart</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_should_see_the_overview_page()">
-                <span>Then I should see theOverview page</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="com.swagger.stepDefinition.OrderConfirmationStep.i_should_see_the_message()">
-                <span>And I should see the message</span>
+              <div class="step skip-bg" title="com.swagger.stepDefinition.CheckoutStep.i_should_see_the_cart_page()">
+                <span>Then I should see the Cart Page</span>
       <div>Step skipped
       </div>
               </div>
@@ -424,11 +424,11 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>09:34:27 am</td>
+<td>15:51:47 pm</td>
 <td>
-<a href="#" class="linked" test-id='13' id='21'>Given I am in the Checkout form page</a>
+<a href="#" class="linked" test-id='15' id='27'>And I am sorting the items by their price</a>
 <div class="">
-<span class="badge badge-default">Swag Lab Order Confirmation Test.fill the Checkout form.Given I am in the Checkout form page</span>
+<span class="badge badge-default">Check Checkout Feature.verify the checkout feature by adding a product in to the cart.And I am sorting the items by their price</span>
 </div>
 </td>
 </tr>
@@ -476,9 +476,9 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:34:27 am</td>
+<td>15:51:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='16'>Verify the Login Feature with Invalid Credentials</a>
+<a href="#" class="linked" test-id='11' id='13'>Verify the Login Feature with Invalid Credentials</a>
 <div class="">
 <span class="badge badge-default">Swag Labs Login Tests.Verify the Login Feature with Invalid Credentials</span>
 </div>
@@ -486,9 +486,9 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:34:27 am</td>
+<td>15:51:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='17'>Verify the Login Feature with Invalid Credentials</a>
+<a href="#" class="linked" test-id='11' id='19'>Verify the Login Feature with Invalid Credentials</a>
 <div class="">
 <span class="badge badge-default">Swag Labs Login Tests.Verify the Login Feature with Invalid Credentials</span>
 </div>
@@ -496,9 +496,9 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:34:27 am</td>
+<td>15:51:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='18'>Verify the Login Feature with Invalid Credentials</a>
+<a href="#" class="linked" test-id='11' id='21'>Verify the Login Feature with Invalid Credentials</a>
 <div class="">
 <span class="badge badge-default">Swag Labs Login Tests.Verify the Login Feature with Invalid Credentials</span>
 </div>
@@ -532,9 +532,9 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:34:27 am</td>
+<td>15:51:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='10'>Verify the Login Feature with Valid Credentials</a>
+<a href="#" class="linked" test-id='11' id='14'>Verify the Login Feature with Valid Credentials</a>
 <div class="">
 <span class="badge badge-default">Swag Labs Login Tests.Verify the Login Feature with Valid Credentials</span>
 </div>
@@ -557,13 +557,13 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 7, 2025 09:34:26 am</h3>
+<h3>Apr 7, 2025 03:51:38 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 7, 2025 09:34:44 am</h3>
+<h3>Apr 7, 2025 03:51:58 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -634,10 +634,10 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'><b>16</b> steps passed</small></div>
+<div><small data-tooltip='85%'><b>17</b> steps passed</small></div>
 <div>
 <small data-tooltip='5%'><b>1</b> steps failed,
-<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -653,7 +653,7 @@ Session ID: 0f9bf776-cbb6-4cb1-a084-7d4c40688ed9
 </div></div>
 <script>
 var timeline = {
-"Swag Labs Login Tests":14.224,"Check Checkout Feature":16.76,"Swag Lab Order Confirmation Test":12.693
+"Swag Lab Order Confirmation Test":19.515,"Swag Labs Login Tests":15.564,"Check Checkout Feature":11.086
 };
 </script>
 <div class="row">
@@ -698,10 +698,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 16,
+passGrandChild: 17,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 3,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
