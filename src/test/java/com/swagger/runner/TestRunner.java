@@ -23,7 +23,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         return super.scenarios();
     }
 
-    @Test(threadPoolSize = 6, timeOut = 80000)
+    @Test(threadPoolSize = 4, timeOut = 80000)
     public void runTests() {
         scenarios();
     }
