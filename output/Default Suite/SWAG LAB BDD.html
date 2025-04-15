@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 11 14:52:32 IST 2025</td>
+<td>Started on:</td><td>Tue Apr 15 10:58:07 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24858 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21611 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,7 +77,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.swagger.runner.TestRunner.tearDownClass()'><b>tearDownClass</b><br>Test class: com.swagger.runner.TestRunner</td>
-<td><div><pre>java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @20473b8
+<td><div><pre>java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @62565fc8
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:159)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
 	at com.google.gson.Gson.getAdapter(Gson.java:458)
@@ -124,8 +124,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1992801971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1992801971'><pre>java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @20473b8
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace96039159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace96039159'><pre>java.lang.reflect.InaccessibleObjectException: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @62565fc8
 	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:388)
 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:364)
 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:312)
@@ -201,7 +201,7 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 </pre></div></td>
 <td>0</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -213,20 +213,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the checkout feature by adding a product in to the cart", "Check Checkout Feature"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //select[@class=&apos;product_sort_container&apos;]&apos; (tried for 8 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.swagger.pages.InventoryPage.sortByPriceLowToHigh(InventoryPage.java:36)
-	at com.swagger.stepDefinition.CheckoutStep.i_am_sorting_the_items_by_their_price(CheckoutStep.java:27)
-	at ✽.I am sorting the items by their price(file:///C:/PS/SWAG%20LAB%20BDD/src/test/resources/features/Checkout.feature:4)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //select[@class=&apos;product_sort_container&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [c8ff0d94-22e7-4d59-b8b4-d61cbbad83e8, findElement {using=xpath, value=//select[@class=&apos;product_sort_container&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30608, moz:profile: C:\Users\DEBADA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: c8ff0d94-22e7-4d59-b8b4-d61cbbad83e8
+Command: [2ca6c274-619b-45d0-a68d-cc301bdbc45a, findElement {using=xpath, value=//div[@class=&apos;inventory_item_name&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15832, moz:profile: C:\Users\DEBADA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2ca6c274-619b-45d0-a68d-cc301bdbc45a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -245,44 +238,17 @@ Session ID: c8ff0d94-22e7-4d59-b8b4-d61cbbad83e8
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.swagger.pages.InventoryPage.sortByPriceLowToHigh(InventoryPage.java:36)
-	at com.swagger.stepDefinition.CheckoutStep.i_am_sorting_the_items_by_their_price(CheckoutStep.java:27)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1217865387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1217865387'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //select[@class=&apos;product_sort_container&apos;]&apos; (tried for 8 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.swagger.pages.InventoryPage.sortByPriceLowToHigh(InventoryPage.java:36)
-	at com.swagger.stepDefinition.CheckoutStep.i_am_sorting_the_items_by_their_price(CheckoutStep.java:27)
-	at ✽.I am sorting the items by their price(file:///C:/PS/SWAG%20LAB%20BDD/src/test/resources/features/Checkout.feature:4)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //select[@class=&apos;product_sort_container&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+	at com.swagger.pages.CheckOutPage.getItemName(CheckOutPage.java:25)
+	at com.swagger.stepDefinition.CheckoutStep.i_should_see_the_cart_page(CheckoutStep.java:39)
+	at ✽.I should see the Cart Page(file:///C:/PS/SWAG%20LAB%20BDD/src/test/resources/features/Checkout.feature:6)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823693598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823693598'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [c8ff0d94-22e7-4d59-b8b4-d61cbbad83e8, findElement {using=xpath, value=//select[@class=&apos;product_sort_container&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30608, moz:profile: C:\Users\DEBADA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: c8ff0d94-22e7-4d59-b8b4-d61cbbad83e8
+Command: [2ca6c274-619b-45d0-a68d-cc301bdbc45a, findElement {using=xpath, value=//div[@class=&apos;inventory_item_name&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15832, moz:profile: C:\Users\DEBADA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2ca6c274-619b-45d0-a68d-cc301bdbc45a
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -304,41 +270,12 @@ Session ID: c8ff0d94-22e7-4d59-b8b4-d61cbbad83e8
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.swagger.pages.InventoryPage.sortByPriceLowToHigh(InventoryPage.java:36)
-	at com.swagger.stepDefinition.CheckoutStep.i_am_sorting_the_items_by_their_price(CheckoutStep.java:27)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
+	at com.swagger.pages.CheckOutPage.getItemName(CheckOutPage.java:25)
+	at com.swagger.stepDefinition.CheckoutStep.i_should_see_the_cart_page(CheckoutStep.java:39)
+	at ✽.I should see the Cart Page(file:///C:/PS/SWAG%20LAB%20BDD/src/test/resources/features/Checkout.feature:6)
 </pre></div></td>
-<td>18</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
+<td>15</td>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -349,35 +286,35 @@ Session ID: c8ff0d94-22e7-4d59-b8b4-d61cbbad83e8
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Invalid Credentials", "Swag Labs Login Tests"</td>
-<td></td>
-<td>13</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
-<tr>
-<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Valid Credentials", "Swag Labs Login Tests"</td>
-<td></td>
-<td>19</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
-<tr>
-<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Invalid Credentials", "Swag Labs Login Tests"</td>
-<td></td>
-<td>17</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
-<tr>
-<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "fill the Checkout form", "Swag Lab Order Confirmation Test"</td>
-<td></td>
-<td>23</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
-<tr>
-<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Invalid Credentials", "Swag Labs Login Tests"</td>
-<td></td>
-<td>14</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
-<tr>
 <td title='com.swagger.runner.TestRunner.runTests()'><b>runTests</b><br>Test class: com.swagger.runner.TestRunner</td>
 <td></td>
 <td>0</td>
-<td>com.swagger.runner.TestRunner@2898ac89</td></tr>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
+<tr>
+<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Valid Credentials", "Swag Labs Login Tests"</td>
+<td></td>
+<td>13</td>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
+<tr>
+<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Invalid Credentials", "Swag Labs Login Tests"</td>
+<td></td>
+<td>13</td>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
+<tr>
+<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Invalid Credentials", "Swag Labs Login Tests"</td>
+<td></td>
+<td>12</td>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
+<tr>
+<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "fill the Checkout form", "Swag Lab Order Confirmation Test"</td>
+<td></td>
+<td>20</td>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
+<tr>
+<td title='com.swagger.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.swagger.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login Feature with Invalid Credentials", "Swag Labs Login Tests"</td>
+<td></td>
+<td>15</td>
+<td>com.swagger.runner.TestRunner@6db9f5a4</td></tr>
 </table><p>
 </body>
 </html>

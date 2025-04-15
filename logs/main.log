@@ -334,3 +334,41 @@ Postal code entered successfully
 Successfully pressed entered
 Clicked on Finish button
 thankYouMessage is displayed
+username entered with name: problem_userNOK
+username entered with name: locked_out_user
+password entered with password: secret_sauceM
+password entered with password: secret_sauceM
+Enter button clicked
+Enter button clicked
+Error message fetched: Epic sadface: Username and password do not match any user in this service
+Error message fetched: Epic sadface: Username and password do not match any user in this service
+username entered with name: standard_user
+password entered with password: secret_sauce
+Enter button clicked
+username entered with name: standard_user
+password entered with password: secret_sauce
+Enter button clicked
+username entered with name: performance_glitch_userNOK
+password entered with password: secret_sauceNOK
+Enter button clicked
+selected sort by price low to high
+product added to cart
+Error message fetched: Epic sadface: Username and password do not match any user in this service
+cart badge is displayed
+username entered with name: standard_user
+password entered with password: secret_sauce
+Enter button clicked
+selected sort by price low to high
+product added to cart
+cart badge is displayed
+clicked checkout cart
+item is present in checkout
+Checkout button clicked
+Checkout info successful
+Checkout info successful
+First name entered successfully
+Last name entered successfully
+Postal code entered successfully
+Successfully pressed entered
+Clicked on Finish button
+thankYouMessage is displayed

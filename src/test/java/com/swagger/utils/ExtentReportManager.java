@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static com.swagger.stepDefinition.BaseStep.tearDown;
+
 
 @SuppressWarnings("all")
 public class ExtentReportManager implements ITestListener {
@@ -52,6 +54,7 @@ public class ExtentReportManager implements ITestListener {
             String imgPath = BaseStep.captureScreenshot(result.getName());
             System.out.println("---------------" + result.getInstance().toString());
             test.addScreenCaptureFromPath(imgPath);
+            tearDown();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -18,7 +18,7 @@ import java.util.Properties;
 @SuppressWarnings({"unused","ResultOfMethodCallIgnored"})
 public class BaseStep {
     protected  static WebDriver driver;
-    protected SingletonWebDriverFactory factory;
+    protected static SingletonWebDriverFactory factory;
     protected Properties properties;
 
 
@@ -60,7 +60,7 @@ public class BaseStep {
         sourceFile.renameTo(targetFile);
         return targetFilePath;
     }
-    public void tearDown(){
+    public static void tearDown(){
         if(driver != null){
             factory.quitDriver();
         }
